@@ -1,0 +1,135 @@
+/* 🎨 Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff7f9;
+  color: #333;
+}
+
+header {
+  background-color: #f4c2c2;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 50px 10%;
+}
+
+.hero {
+  text-align: center;
+  background-color: #ffe4ec;
+  padding: 60px 20px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.hero h2 {
+  color: #b83b5e;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  color: #b83b5e;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #f4c2c2;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  margin-top: 40px;
+}
+
+/* 🔍 Botón de scroll arriba */
+#btnTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  z-index: 100;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #b83b5e;
+  color: white;
+  cursor: pointer;
+  padding: 12px 15px;
+  border-radius: 50%;
+}
+
+#btnTop:hover {
+  background-color: #8e2e49;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .hero h2 {
+    font-size: 1.5em;
+  }
+}
